@@ -1,0 +1,7 @@
+*.hdf5
+**/__pycache__
+**/tags
+**/drafts/
+*.dill
+.vscode
+.pytest_cache
