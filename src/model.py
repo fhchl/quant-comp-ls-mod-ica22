@@ -1,5 +1,4 @@
 import functools
-import time
 import abc
 
 import jax
@@ -7,13 +6,11 @@ import jax.tree_util as jtu
 import equinox as eqx
 import jax.numpy as jnp
 import diffrax as dfx
-import optax
 import numpy as np
-import scipy.signal
 
 from scipy.optimize import least_squares
 from scipy.optimize._optimize import MemoizeJac
-from .linear_sys_ident import tf_matching, era, estimate_ir
+from .linear_sys_ident import tf_matching
 from .jaxutil import value_and_jacfwd
 
 class DynamicalSystem(eqx.Module):

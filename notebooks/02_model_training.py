@@ -13,6 +13,11 @@ import jax
 import h5py
 from tqdm import tqdm
 
+# change cwd to `data`
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 jax.config.update('jax_platform_name', 'cpu')
 jax.config.update("jax_enable_x64", True)
 

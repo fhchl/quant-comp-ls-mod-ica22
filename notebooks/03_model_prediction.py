@@ -5,6 +5,11 @@ import jax
 import h5py
 from scipy.signal import welch
 
+# change cwd to `data`
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.getcwd())))
 from src.util import nrmse, raw_decode
 from src.jaxutil import clear_caches
