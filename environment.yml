@@ -23,4 +23,5 @@ dependencies:
     - equinox==0.6.0
     - nidaqmx==0.6.3
     - tqdm==4.64.0
+    - SciencePlots==1.0.9
     - psutil
