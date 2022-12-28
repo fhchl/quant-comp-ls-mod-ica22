@@ -43,9 +43,16 @@ Repo is structured as follows::
 Getting started
 ---------------
 
-Create a virtual environment and activate it::
+On Linux, create a virtual environment with::
 
    conda env create -f environment.yml
+
+On Windows, use::
+
+   Conda env create -f environment_windows.yml
+
+Afterwards, activate the environment::
+
    conda activate mod_comp
 
 Download dataset from release page::
